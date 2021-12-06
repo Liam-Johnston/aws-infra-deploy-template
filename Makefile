@@ -40,7 +40,7 @@ plan:
 
 .PHONY: apply
 apply:
-	$(COMPOSE_RUN_TERRAFORM) apply "tfplan" $(TF_VARS)
+	$(COMPOSE_RUN_TERRAFORM) apply "tfplan"
 
 .PHONY: destroy_plan
 destroy_plan:
@@ -48,4 +48,4 @@ destroy_plan:
 
 .PHONY: destroy_apply
 destroy_apply:
-	$(COMPOSE_RUN_TERRAFORM) destroy -auto-approve $(TF_VARS)
+	$(COMPOSE_RUN_TERRAFORM) destroy -auto-approve
