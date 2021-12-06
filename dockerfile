@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:1.0.1 as tf
+FROM hashicorp/terraform:1.0.11 as tf
 
 RUN apk add --update --no-cache \
         make \
